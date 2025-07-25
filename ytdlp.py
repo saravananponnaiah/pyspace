@@ -13,7 +13,6 @@ def longer_than_a_minute(info, *, incomplete):
         return 'The video is too short'
     return None
 
-
 ydl_opts = {
     'match_filter': longer_than_a_minute,
 }
