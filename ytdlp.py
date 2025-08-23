@@ -4,7 +4,9 @@
 # *******************************************************************
 import yt_dlp
 
-URLS = ['https://www.youtube.com/watch?v=2qCpY38ompo']
+
+
+URLS = ['https://www.youtube.com/watch?v=ty6mMk9HRh0']
 
 def longer_than_a_minute(info, *, incomplete):
     """Download only videos longer than a minute (or with unknown duration)"""
@@ -15,7 +17,9 @@ def longer_than_a_minute(info, *, incomplete):
 
 ydl_opts = {
     'match_filter': longer_than_a_minute,
-}
+    'format': 'bestvideo[height<=1080]+bestaudio/best',
+    'merge_output_format': 'mp4'
+    }
 
 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
     error_code = ydl.download(URLS)
