@@ -61,9 +61,11 @@ def download_video(url, output_path="downloads", audio_only=False, browser='chro
 #         'https://www.youtube.com/watch?v=MqHdM1iwvwA', 'https://www.youtube.com/watch?v=nPrhOHl0IMk',
 #         'https://www.youtube.com/watch?v=rp3_FhRnIRw', 'https://www.youtube.com/watch?v=l6-yvD53E3o']
 
-urls = ['https://www.youtube.com/watch?v=OCg6BWlAXSw', 'https://www.youtube.com/watch?v=2mDCVzruYzQ',
-        'https://www.youtube.com/watch?v=LPeZOE8ZIHI', 'https://www.youtube.com/watch?v=cFzAw52wR2E',
-        'https://www.youtube.com/watch?v=d0wsNOzzoN8']
+# urls = ['https://www.youtube.com/watch?v=OCg6BWlAXSw', 'https://www.youtube.com/watch?v=2mDCVzruYzQ',
+#         'https://www.youtube.com/watch?v=LPeZOE8ZIHI', 'https://www.youtube.com/watch?v=cFzAw52wR2E',
+#         'https://www.youtube.com/watch?v=d0wsNOzzoN8']
+
+urls = ['https://www.youtube.com/watch?v=nAmC7SoVLd8']
 
 for url in urls:
-    download_video(url, output_path='D:\\Media\\Video\\2025-08-02', audio_only=False, browser='edge')
+    download_video(url, output_path='D:\\Media\\Video\\Langchain', audio_only=False, browser='edge')
